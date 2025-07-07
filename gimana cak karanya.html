@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Confession</title>
+
+<link rel="stylesheet" href="gimana-cak-karanya.css">
+</head>
+<body>
+<p class="instruction">Click the heart!</p>
+
+<div class="container">
+    <label>
+        <div class="heart beating">
+            <img src="Love_Heart_SVG.svg">
+        </div>
+        <input id="messageState" type="checkbox" style="display:none">
+    </label>
+
+    <div class="message no-anim">
+        <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">For U</h1>
+        <p> 
+            <span>
+                  Halooooo Nauraaaaa, jujurr aku bingung mw start darimanaaa cuman aku disini mau ngungkapin perasaankuu...
+            </span><br><br>
+            <span>
+                  Cuman pilihan ada di kamu dan aku nggak keberatan sama sekali dengan pilihanmu ituu...
+            </span>      
+        </p><br>
+        <div class="sincere">
+            <p style="font-weight: bold;">Sincerely</p>
+            <p>Aufar</p>
+        </div>
+    </div>
+</div>
+
+<audio id="bg-music" src="wave_to_earth_bad.mp3" loop></audio>
+
+<script src="jquery.js.download"></script>
+<script src="jquery2.1.js.download"></script>
+<script defer src="gimana-cak-karanya.js.download"></script>
+
+<script>
+const music = document.getElementById('bg-music');
+music.volume = 0.5;
+document.querySelector('.heart').addEventListener('click', () => {
+    music.play();
+});
+</script>
+</body>
+</html>
